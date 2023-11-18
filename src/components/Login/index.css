@@ -1,19 +1,19 @@
 .login-background{
     background-color:black;
-    height:834px;
+    
 }
 
 .login-logo{
     height:90px;
     width:90px;
     margin-top: 160px;
-    margin-left: 134px;
+    /* margin-left: 134px; */
 }
 
 .login-tagline{
     width:146px;
     height:20px;
-    margin-left: 108px;
+    /* margin-left: 108px; */
     margin-top: 17px;
     text-align: center;
     color: #36A546CC;
@@ -23,7 +23,7 @@
 
 .email-input{
     color:white;
-    margin-left: 61px;
+    /* margin-left: 61px; */
     margin-top: 49px;
     width: 238px;
     height:42px;
@@ -36,7 +36,7 @@
 
 .password-input{
     color:white;
-    margin-left: 61px;
+    /* margin-left: 61px; */
     margin-top: 25px;
     width: 238px;
     height: 42px;
@@ -48,7 +48,7 @@
 }
 
 .login-button{
-    margin-left: 61px;
+    /* margin-left: 61px; */
     margin-top: 47px;
     width:238px;
     height:42px;
@@ -60,7 +60,7 @@
 }
 .login-forgot-password{
     
-    margin-left: 116px;
+    /* margin-left: 116px; */
     margin-top:26px;
     width: 143px;
     height: 19px;
@@ -73,10 +73,7 @@
 }
 
 .login-error{
-    margin-left: 61px;
+    /* margin-left: 61px; */
     margin-top:25px;
 }
 
-.sample-creds{
-    margin-left: 61px;
-}
