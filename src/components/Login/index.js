@@ -41,18 +41,18 @@ class Login extends Component{
 
     render(){
         const {mail , password , errorMessage , token} = this.state
-        if(token !== null){
-           return  <Redirect to='/' />
-        }
-        return <form className="login-background text-light vh-100 d-flex flex-column justif-content-center align-items-center "  onClick={(e)=>{e.preventDefault()}}>
-            <img src='https://res.cloudinary.com/dujknj4ka/image/upload/v1700278957/Group_3_tjcxb6.png' alt='greendzine logo' />
-            <p>We are Electric</p>
-            <input className="bg-dark text-light p-1 login-input" type='email' placeholder="E-mail" value={mail} onChange={this.changeMail} /> <br/>
-            <input  className="bg-dark text-light p-1"  type='password' placeholder="Password" value={password} onChange={this.changePassword} /> <br/>
-            <p className={ (errorMessage ==='') ? 'd-none' : ''}>{errorMessage}</p>
-            <button type='button' onClick={this.checkCredentials}> Submit</button>
-            <p>Forgot Password?</p>
-            <p>credentials are email: sample@greendzine.com password:password@greendzine.com</p>
+        // if(token !== null){
+        //    return  <Redirect to='/' />
+        // }
+        return <form className="login-background  vh-100 d-md-flex flex-column  justify-content-center align-items-center"  onClick={(e)=>{e.preventDefault()}}>
+            <img className="login-logo" src='https://res.cloudinary.com/dujknj4ka/image/upload/v1700278957/Group_3_tjcxb6.png' alt='greendzine logo' />
+            <p className="login-tagline">We are Electric</p>
+            <input className="email-input" type='email' placeholder="E-mail" value={mail} onChange={this.changeMail} /> <br/>
+            <input  className="password-input"  type='password' placeholder="Password" value={password} onChange={this.changePassword} /> <br/>
+            <p className={ (errorMessage ==='') ? 'd-none' : 'text-danger'}>*{errorMessage}</p>
+            <button type='button' className="login-button" onClick={this.checkCredentials}> Login</button>
+            <p className="login-forgot-password">Forgot Password?</p>
+            <p className="text-secondary ml-2">email: sample@greendzine.com <br/> password:password@greendzine.com</p>
         </form>
     }
 }

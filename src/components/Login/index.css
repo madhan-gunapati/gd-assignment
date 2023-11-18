@@ -2,12 +2,68 @@
     background-color:black;
 }
 
-.login-input{
-    
+.login-logo{
+    height:90px;
+    width:90px;
+    margin-top: 160px;
+    margin-left: 134px;
+}
+
+.login-tagline{
+    width:146px;
+    height:20px;
+    margin-left: 108px;
+    margin-top: 17px;
+    text-align: center;
+    color: #36A546CC;
+    letter-spacing: 0.02px;
+    font: normal normal normal 16px/21px Mulish;
+}
+
+.email-input{
+    margin-left: 61px;
+    margin-top: 49px;
+    width: 238px;
+    height:42px;
+    background: #1F191966 0% 0% no-repeat padding-box;
+    box-shadow: inset 0px 3px 3px #FFFDFD40, 3px 3px 3px #4A494947;
+    padding:10px;
+    border: 0px;
+    border-radius: 10px;
+}
+
+.password-input{
+    margin-left: 61px;
+    margin-top: 25px;
     width: 238px;
     height: 42px;
-    background-color: #1F191966 0% 0% no-repeat padding-box;
+    background: #1F191966 0% 0% no-repeat padding-box;
     box-shadow: inset 0px 3px 3px #FFFDFD40, 3px 3px 3px #4A494947;
+    padding:10px;
+    border: 0px;
+    border-radius: 10px;
+}
+
+.login-button{
+    margin-left: 61px;
+    margin-top: 47px;
+    width:238px;
+    height:42px;
+    background: transparent linear-gradient(180deg, #00FF2580 0%, #000000 100%, #36A54680 100%) 0% 0% no-repeat padding-box;
     mix-blend-mode: normal;
+    border: 2px solid #8CFF0026;
+    color:white;
+    border-radius: 15px;
+}
+.login-forgot-password{
+    
+    margin-left: 116px;
+    margin-top:26px;
+    width: 143px;
+    height: 19px;
+    text-align: center;
+    font: normal normal normal 15px/20px Mulish;
+    letter-spacing: 0.02px;
+    color: #36A546;
     opacity: 1;
 }
