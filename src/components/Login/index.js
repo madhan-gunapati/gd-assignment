@@ -41,9 +41,9 @@ class Login extends Component{
 
     render(){
         const {mail , password , errorMessage , token} = this.state
-        // if(token !== null){
-        //    return  <Redirect to='/' />
-        // }
+        if(token !== null){
+           return  <Redirect to='/' />
+        }
         return <form className="login-background  vh-100 d-flex flex-column   align-items-center"  onClick={(e)=>{e.preventDefault()}}>
             <img className="login-logo" src='https://res.cloudinary.com/dujknj4ka/image/upload/v1700278957/Group_3_tjcxb6.png' alt='greendzine logo' />
             <p className="login-tagline">We are Electric</p>
