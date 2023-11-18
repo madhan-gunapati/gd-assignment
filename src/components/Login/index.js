@@ -44,7 +44,7 @@ class Login extends Component{
         // if(token !== null){
         //    return  <Redirect to='/' />
         // }
-        return <form className="login-background  vh-100 d-md-flex flex-column  justify-content-center align-items-center"  onClick={(e)=>{e.preventDefault()}}>
+        return <form className="login-background  d-md-flex flex-column  justify-content-center align-items-center"  onClick={(e)=>{e.preventDefault()}}>
             <img className="login-logo" src='https://res.cloudinary.com/dujknj4ka/image/upload/v1700278957/Group_3_tjcxb6.png' alt='greendzine logo' />
             <p className="login-tagline">We are Electric</p>
             <input className="email-input" type='email' placeholder="E-mail" value={mail} onChange={this.changeMail} /> <br/>
@@ -52,7 +52,7 @@ class Login extends Component{
             <p className={ (errorMessage ==='') ? 'd-none' : 'text-danger login-error'}>*{errorMessage}</p>
             <button type='button' className="login-button" onClick={this.checkCredentials}> Login</button>
             <p className="login-forgot-password">Forgot Password?</p>
-            <p className="text-secondary sample-creds">email: sample@greendzine.com <br/> password:password@greendzine.com</p>
+          
         </form>
     }
 }

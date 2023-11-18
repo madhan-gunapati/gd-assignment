@@ -1,5 +1,6 @@
 .login-background{
     background-color:black;
+    height:834px;
 }
 
 .login-logo{
@@ -63,6 +64,7 @@
     margin-top:26px;
     width: 143px;
     height: 19px;
+    margin-bottom: 221px;
     text-align: center;
     font: normal normal normal 15px/20px Mulish;
     letter-spacing: 0.02px;
