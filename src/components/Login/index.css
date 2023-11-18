@@ -21,6 +21,7 @@
 }
 
 .email-input{
+    color:white;
     margin-left: 61px;
     margin-top: 49px;
     width: 238px;
@@ -33,6 +34,7 @@
 }
 
 .password-input{
+    color:white;
     margin-left: 61px;
     margin-top: 25px;
     width: 238px;
@@ -70,6 +72,7 @@
 
 .login-error{
     margin-left: 61px;
+    margin-top:25px;
 }
 
 .sample-creds{
