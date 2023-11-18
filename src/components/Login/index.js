@@ -49,10 +49,10 @@ class Login extends Component{
             <p className="login-tagline">We are Electric</p>
             <input className="email-input" type='email' placeholder="E-mail" value={mail} onChange={this.changeMail} /> <br/>
             <input  className="password-input"  type='password' placeholder="Password" value={password} onChange={this.changePassword} /> <br/>
-            <p className={ (errorMessage ==='') ? 'd-none' : 'text-danger'}>*{errorMessage}</p>
+            <p className={ (errorMessage ==='') ? 'd-none' : 'text-danger login-error'}>*{errorMessage}</p>
             <button type='button' className="login-button" onClick={this.checkCredentials}> Login</button>
             <p className="login-forgot-password">Forgot Password?</p>
-            <p className="text-secondary ml-2">email: sample@greendzine.com <br/> password:password@greendzine.com</p>
+            <p className="text-secondary sample-creds">email: sample@greendzine.com <br/> password:password@greendzine.com</p>
         </form>
     }
 }
