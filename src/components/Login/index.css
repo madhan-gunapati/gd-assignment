@@ -1,0 +1,13 @@
+.login-background{
+    background-color:black;
+}
+
+.login-input{
+    
+    width: 238px;
+    height: 42px;
+    background-color: #1F191966 0% 0% no-repeat padding-box;
+    box-shadow: inset 0px 3px 3px #FFFDFD40, 3px 3px 3px #4A494947;
+    mix-blend-mode: normal;
+    opacity: 1;
+}
