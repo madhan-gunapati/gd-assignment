@@ -1,8 +1,14 @@
 import {Link} from 'react-router-dom'
 
-const Footer = ()=> <div className='d-flex flex-row justify-content-around fixed-bottom pb-2 bg-dark'>
-    <Link  to='/' >Home</Link>
-    <Link to='/details' >Details</Link>
+import { FaHome } from "react-icons/fa";
+
+import { IoMdPerson } from "react-icons/io";
+
+import './index.css'
+
+const Footer = ()=> <div className='d-flex flex-row justify-content-around align-items-center fixed-bottom footer-container'>
+    <Link  to='/' ><FaHome  style={{ opacity: 0.5 }} color='#36A546' size={28} /></Link>
+    <Link to='/details' ><IoMdPerson  style={{ opacity: 0.5 }} color='#36A546' size={28} /></Link>
 </div>
 
 export default Footer

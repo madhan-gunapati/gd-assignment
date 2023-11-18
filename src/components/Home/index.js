@@ -23,7 +23,7 @@ const ProductivityList = [
 
 class Home extends Component{
     render(){
-        return <div>
+        return <div className='home-container'>
             <Header />
 
            <div>

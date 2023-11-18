@@ -1,0 +1,40 @@
+.header-container{
+    background-color: black;
+    margin-right: 0px;
+    width:100vw;
+}
+
+.caller-icon{
+   
+    height:40px;
+    width:40px;
+    margin-top:20px;
+    
+   margin-left: auto;
+   margin-right: 22px;
+    background: transparent  0% 0% no-repeat padding-box;
+}
+
+.motoproLogo{
+    height:70px;
+    width:71px;
+    margin-top:20px;
+    margin-bottom: 41px;
+    background: transparent  0% 0% no-repeat padding-box;
+    mix-blend-mode: normal;
+    opacity: 1;
+}
+.header-counter{
+width: 23px;
+height: 23px;
+text-align: center;
+font: normal normal normal 18px/25px Source Sans Pro;
+font-weight: bolder;
+letter-spacing: 0.02px;
+color: #36A546;
+background-color: #5E5E5EB5;
+border-radius: 23px;
+
+}
+
+
