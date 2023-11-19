@@ -5,9 +5,6 @@ import ProgressBar from "@asyrafhussin/react-progress-bar";
 
 import './index.css'
 
-// const Example = () => {
-//   return <ProgressBar completed={60} />;
-// };
 
 import Footer  from '../Footer'
 
@@ -26,14 +23,17 @@ class Home extends Component{
         return <div className='home-container'>
             <Header />
 
-           <div>
-            <p>Employee Productivity Dashboard</p>
-            <ul>
+           <div className='container'>
+            <h1 className='homepage-heading'>Employee Productivity Dashboard</h1>
+            <ul className='progressbar-container'>
                 {
-                    ProductivityList.map((item)=><li key={item.day} className='list-item'>
-                        <p>Productivity on {item.day}</p>
-                        <p>{item.percentage}%</p>
-                        <ProgressBar completed={item.percentage} />
+                    ProductivityList.map((item)=><li key={item.day} className='list-item d-flex flex-row justify-content-between '>
+                       <div>
+                        <p className='li-text'>Productivity on {item.day}</p>
+                        <ProgressBar completed={item.percentage} height={11} bgColor='#36A546' baseBgColor='#5E5E5E82' isLabelVisible={false} />
+                        </div>
+                        <p className='li-percentage'>{item.percentage}%</p>
+                        
                     </li>)
                 }
             </ul>
