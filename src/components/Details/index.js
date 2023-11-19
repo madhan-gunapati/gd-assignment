@@ -74,6 +74,7 @@ class Details extends Component{
                     <div className="d-flex flex-column align-items-center">
                     <input type='search' className="search-bar" placeholder="Search with name" value={inputValue} onChange={this.changeInput} />
                     </div>
+                    {list.length ===0 ? <p className="text-light m-5 text-center">No Employees Found</p>:
                      <ul className="card-container d-flex flex-column align-items-center">
                        {
                          list.map((item)=><li key={item['EMP ID']} className={`list-item  d-flex flex-row justify-content-between ${item['EMP ID'] % 2 ===0 ? 'list-item-left' : ''}`}>
@@ -87,7 +88,7 @@ class Details extends Component{
                          </li>)
                        }
                      </ul>
-                     
+    }
                      <Footer />
                 </div>
     }
