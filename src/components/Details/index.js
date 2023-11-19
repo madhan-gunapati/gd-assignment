@@ -69,22 +69,25 @@ class Details extends Component{
 
     render(){
         const {inputValue , list} = this.state
-        return <div>
+        return <div className="details-container">
                     <Header />
-                    <input type='search' placeholder="Search with name" value={inputValue} onChange={this.changeInput} />
-                     <ul>
+                    <div className="d-flex flex-column align-items-center">
+                    <input type='search' className="search-bar" placeholder="Search with name" value={inputValue} onChange={this.changeInput} />
+                    </div>
+                     <ul className="card-container d-flex flex-column align-items-center">
                        {
-                         list.map((item)=><li key={item['EMP ID']} className="list-item m-2 bg-dark text-white p-2 rounded d-flex flex-row justify-content-between">
-                        <p className="order-1">{item['EMP ID']}</p>
+                         list.map((item)=><li key={item['EMP ID']} className={`list-item  d-flex flex-row justify-content-between ${item['EMP ID'] % 2 ===0 ? 'list-item-left' : ''}`}>
+                        <p className="order-1 card-number">{item['EMP ID']}</p>
                         <div className="order-0">
                         <p>EMP ID : {item['EMP ID']}</p>
                         <p>NAME : {item.Name}</p>
-                        <p>DOB : {item.DOB}</p>
-                        <p>Role : {item.Role}</p>
+                        <p>DOB :<span style={{color:'#ad3a17'}}> {item.DOB}</span></p>
+                        <p >Role : <span className="text-success">{item.Role}</span></p>
                         </div>
                          </li>)
                        }
                      </ul>
+                     
                      <Footer />
                 </div>
     }

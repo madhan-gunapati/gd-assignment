@@ -23,9 +23,9 @@ class Home extends Component{
         return <div className='home-container'>
             <Header />
 
-           <div className='container'>
+           <div className='progress-bar-container'>
             <h1 className='homepage-heading'>Employee Productivity Dashboard</h1>
-            <ul className='progressbar-container'>
+            <ul >
                 {
                     ProductivityList.map((item)=><li key={item.day} className='list-item d-flex flex-row justify-content-between '>
                        <div>
