@@ -56,7 +56,8 @@ class Details extends Component{
 
         changeInput = (e)=>{
             
-                    const val = e.target.value 
+                    let val = e.target.value 
+                    val = val.toLowerCase()
                     function finder(item){
                             const name = item['Name'].toLowerCase()
                             return name.includes(val)
