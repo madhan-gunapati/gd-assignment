@@ -1,4 +1,5 @@
 # Greendzine Assignment
 
-<p>Commiting the three page routes without adding styling as version1 </p>
+<p>user name is : sample@greendzine.com </p>
+<p>Password is : password@greendzine.com </p>
 <p>Will update soon </p>
